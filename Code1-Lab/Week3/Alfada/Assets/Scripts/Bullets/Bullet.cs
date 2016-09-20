@@ -4,6 +4,10 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 
 	public float bulletSpeed;
+	public float bulletLife;
+
+	private float shotLife;
+	Rigidbody2D RB;
 
 
 
@@ -11,6 +15,10 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		RB = GetComponent<Rigidbody2D> ();
+		shotLife = bulletLife;
+		RB.AddForce (transform.up * bulletSpeed);
 
 	
 	
@@ -20,12 +28,30 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		shotLife -= Time.deltaTime;
+		if (shotLife < 0) {
 
+			Destroy (gameObject);
+
+		}
 	
-		transform.Translate (0, bulletSpeed * Time.deltaTime, 0); //* Time.deltaTime);
+	
 			
 
 
+
+	}
+
+	void OnCollisionEnter2D(Collision2D otherObject){
+		
+
+	if (otherObject.gameObject.tag =="Enemy") {
+
+
+			Destroy (gameObject);
+		
+
+		}
 
 	}
 }

@@ -4,15 +4,36 @@ using System.Collections;
 public class Item : MonoBehaviour {
 
 	public Transform particleEF;
+
+	private float timer = 4f;
+	private int number;
+	ScoreManager Manager;
+	Animator Fadeout;
+	SoundManager Sound;
+
 	// Use this for initialization
 	void Start () {
-
+		Manager = GameObject.Find ("ScoreManager").GetComponent<ScoreManager> ();
+		Sound = GameObject.Find ("SoundManager").GetComponent<SoundManager> ();
+		Fadeout = GetComponent<Animator> ();
 		Destroy (gameObject, 5f);
+		number = Random.Range (0, 2);
+
 	
-	}
+		}
 	
-	// Update is called once per frame
+
 	void Update () {
+
+		timer -= Time.deltaTime;
+
+		if (timer < 0) {
+
+			Fadeout.SetBool ("Set", true);
+
+		}
+
+
 	
 	}
 
@@ -23,9 +44,14 @@ public class Item : MonoBehaviour {
 
 
 			Destroy (gameObject);
+			Manager.AddScore (500);
+			Sound.PlaySound (number);
 			Instantiate (particleEF, new Vector3 (transform.position.x, transform.position.y, -0.2f), Quaternion.identity);
+		
 
 		}
+
+
 
 	}
 
