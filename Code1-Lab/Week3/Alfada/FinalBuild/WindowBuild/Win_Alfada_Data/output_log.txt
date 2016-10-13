@@ -1,0 +1,64 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\Mono.Data.Sqlite.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\Mono.Data.Sqlite.dll into Unity Child Domain
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\System.Data.dll (this message is harmless)
+Loading F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\System.Data.dll into Unity Child Domain
+- Completed reload, in  0.036 seconds
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on FadingScene
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+desktop: 1920x1080 60Hz; virtual: 3520x1080 at -1600,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.576742 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.695972 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 253.
+Total: 1.393518 ms (FindLiveObjects: 0.009938 ms CreateObjectMapping: 0.009035 ms MarkObjects: 0.117155 ms  DeleteObjects: 1.254980 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.276776 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 462.
+Total: 3.470696 ms (FindLiveObjects: 0.008733 ms CreateObjectMapping: 0.007529 ms MarkObjects: 0.175883 ms  DeleteObjects: 3.278248 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.338516 ms
+
+Unloading 162 unused Assets to reduce memory usage. Loaded Objects now: 416.
+Total: 1.416407 ms (FindLiveObjects: 0.016263 ms CreateObjectMapping: 0.010842 ms MarkObjects: 0.184617 ms  DeleteObjects: 1.204082 ms)
+
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\System.Transactions.dll (this message is harmless)
+Platform assembly: F:\GameDesign\Alfada\FinalBuild\WindowBuild\Win_Alfada_Data\Managed\System.Xml.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.527841 ms
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 1.490194 ms (FindLiveObjects: 0.011444 ms CreateObjectMapping: 0.006926 ms MarkObjects: 0.152994 ms  DeleteObjects: 1.318527 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 289c -> priority: 1 

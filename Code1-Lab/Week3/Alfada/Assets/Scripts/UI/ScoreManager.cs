@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
 
-	int score = 0;
+    static int score = 0;
 	int Lives = 3;
 	public Text scoreText;
 	public Text livesText;
 	public GameObject spawnNewPlayer;
+	public static int saveScore;
+	public GameObject Gameover;
+
 
 	// Use this for initialization
 	void Start () {
 
 		scoreText.text = "Score: " + score;
 		livesText.text = "Lives : " + Lives;
+		PlayerPrefs.DeleteAll ();
 	
 	}
 	
@@ -25,6 +29,8 @@ public class ScoreManager : MonoBehaviour {
 		if (Lives == 0) {
 
 			StartCoroutine (LoadGameOverScene ());
+			SaveTheGameScore ();
+
 		}
 	
 	}
@@ -37,6 +43,7 @@ public class ScoreManager : MonoBehaviour {
 
 		score = score + pointsToAdd;
 		scoreText.text = "Score: " + score;
+		saveScore = score + pointsToAdd;
 
 
 	}
@@ -57,6 +64,7 @@ public class ScoreManager : MonoBehaviour {
 		if (Lives > 0) {
 
 			StartCoroutine (StartSpawn ());
+		
 		}
 
 	}
@@ -69,11 +77,25 @@ public class ScoreManager : MonoBehaviour {
 		}
 
 	IEnumerator LoadGameOverScene(){
-		yield return new WaitForSeconds (2);
+		Gameover.SetActive (true);
+		yield return new WaitForSeconds (3);
 		SceneManager.LoadScene ("Gameover");
 
 
 	}
 
 
-}
+
+	public static void SaveTheGameScore(){
+
+		saveScore = score;
+
+		PlayerPrefs.SetInt ("highscore", saveScore);
+		//Debug.Log (saveScore);
+	
+
+		}
+	}
+
+
+
